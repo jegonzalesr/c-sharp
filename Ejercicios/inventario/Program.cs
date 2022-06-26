@@ -108,7 +108,7 @@ namespace inventario
                 cantidad = Console.ReadLine();
                 Console.WriteLine();
 
-                movimientoInventario(codigo, cantidad, "-");
+                movimientoInventario(codigo, Int32.Parsecantidad, "-");
         }
 
 
