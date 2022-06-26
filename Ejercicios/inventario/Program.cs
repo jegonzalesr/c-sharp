@@ -80,7 +80,6 @@ namespace inventario
                 static void ajusteDeInventarioPositivo () {
                 string codigo = "";
                 string cantidad = "";
-
                 Console.Clear();
                 Console.WriteLine();
                 Console.WriteLine("Ajuste de Inventario positivo");
@@ -94,6 +93,23 @@ namespace inventario
 
                 movimientoInventario(codigo, Int32.Parse(cantidad), "+");
             }
+
+                static void ajusteDeInventarioNegativo() {
+                string codigo = "";
+                string cantidad = "";
+                Console.Clear();
+                Console.WriteLine();
+                Console.WriteLine("Ajuste de Inventario Negativo");
+                Console.WriteLine("**********************************");
+                Console.WriteLine("Consultar el codigo del producto: ");
+                codigo = Console.ReadLine();
+                Console.WriteLine();
+                Console.WriteLine("Desea actualizar la cantidad del producto en el inventario: ");
+                cantidad = Console.ReadLine();
+                Console.WriteLine();
+
+                movimientoInventario(codigo, cantidad, "-");
+        }
 
 
         static void Main(string[] args)
