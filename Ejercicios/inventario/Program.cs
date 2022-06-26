@@ -108,7 +108,7 @@ namespace inventario
                 cantidad = Console.ReadLine();
                 Console.WriteLine();
 
-                movimientoInventario(codigo, Int32.Parsecantidad, "-");
+                movimientoInventario(codigo, Int32.Parse(cantidad), "-");
         }
 
 
@@ -145,6 +145,9 @@ namespace inventario
                         break;
                         case "4":
                         ajusteDeInventarioPositivo();
+                        break;
+                        case "5":
+                        ajusteDeInventarioNegativo();
                         break;
                         default:
                         break;
