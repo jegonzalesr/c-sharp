@@ -58,6 +58,25 @@ namespace inventario
             movimientoInventario(codigo, Int32.Parse(cantidad), "+");
         }
 
+                static void salidaDeInventario() {
+                string codigo = "";
+                string cantidad ="";
+                int contadorCantidadn;
+
+                Console.Clear();
+                Console.WriteLine();
+                Console.WriteLine("Salida de Productos del Inventario");
+                Console.WriteLine("**********************************");
+                Console.WriteLine("Ingrese el codigo del producto: ");
+                codigo = Console.ReadLine();
+                Console.WriteLine();
+                Console.WriteLine("Ingrese la cantidad del producto a dar salida: ");
+                cantidad = Console.ReadLine();
+                Console.WriteLine();
+
+                movimientoInventario(codigo, Int32.Parse(cantidad), "-");
+            }
+
 
         static void Main(string[] args)
         {
@@ -84,6 +103,9 @@ namespace inventario
                     }
                         case "2":
                         ingresoDeInventario();
+                        break;
+                        case "3":
+                        salidaDeInventario();
                         break;
                         default:
                         break;
