@@ -43,7 +43,7 @@ namespace inventario
         static void ingresoDeInventario() {
             string codigo = "";
             string cantidad = "";
-            int contadorCantidadp; 
+           
 
             Console.Clear();
             Console.WriteLine();
@@ -61,7 +61,7 @@ namespace inventario
                 static void salidaDeInventario() {
                 string codigo = "";
                 string cantidad ="";
-                int contadorCantidadn;
+                
 
                 Console.Clear();
                 Console.WriteLine();
