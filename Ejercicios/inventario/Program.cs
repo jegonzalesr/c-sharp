@@ -59,8 +59,6 @@ namespace inventario
                 static void salidaDeInventario() {
                 string codigo = "";
                 string cantidad ="";
-                
-
                 Console.Clear();
                 Console.WriteLine();
                 Console.WriteLine("Salida de Productos del Inventario");
