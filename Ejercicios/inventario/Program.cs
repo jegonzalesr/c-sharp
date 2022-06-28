@@ -43,8 +43,7 @@ namespace inventario
         static void ingresoDeInventario() {
             string codigo = "";
             string cantidad = "";
-           
-
+          
             Console.Clear();
             Console.WriteLine();
             Console.WriteLine("Ingreso de Productos al Inventario");
@@ -87,7 +86,7 @@ namespace inventario
                 Console.WriteLine("Consultar el codigo del producto: ");
                 codigo = Console.ReadLine();
                 Console.WriteLine();
-                Console.WriteLine("Desea actualizar la cantidad del producto en el inventario: ");
+                Console.WriteLine("Ingresar la cantidad del producto a ajustar en el inventario: ");
                 cantidad = Console.ReadLine();
                 Console.WriteLine();
 
@@ -104,7 +103,7 @@ namespace inventario
                 Console.WriteLine("Consultar el codigo del producto: ");
                 codigo = Console.ReadLine();
                 Console.WriteLine();
-                Console.WriteLine("Desea actualizar la cantidad del producto en el inventario: ");
+                Console.WriteLine("Ingresar la cantidad del producto a ajustar en el inventario: ");
                 cantidad = Console.ReadLine();
                 Console.WriteLine();
 
