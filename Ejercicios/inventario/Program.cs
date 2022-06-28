@@ -43,7 +43,6 @@ namespace inventario
         static void ingresoDeInventario() {
             string codigo = "";
             string cantidad = "";
-          
             Console.Clear();
             Console.WriteLine();
             Console.WriteLine("Ingreso de Productos al Inventario");
