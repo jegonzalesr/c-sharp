@@ -25,8 +25,9 @@ namespace inventario
             {
                 Console.WriteLine(productos[i , 0] + " | " + productos[i , 1] + " | " + productos[i , 2]); 
             }
+             Console.ReadLine();
         }
-
+           
         static void movimientoInventario(string codigo, int cantidad, string tipoMovimiento) {
         for (int i = 0; i < 5; i++)
         {
@@ -128,11 +129,9 @@ namespace inventario
 
                 switch (opcion)
                 {
-                    case "1":{
+                    case "1":
                         listarProductos();
-                        Console.ReadLine();
-                        break;
-                    }
+                        break;                    
                         case "2":
                         ingresoDeInventario();
                         break;
