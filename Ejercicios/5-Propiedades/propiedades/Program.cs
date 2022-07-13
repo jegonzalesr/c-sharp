@@ -20,8 +20,9 @@ namespace propiedades
             Alumno c = new Alumno(3);
             b.PrimerNombre = "Jose";
 
-            Console.WriteLine(a.PrimerNombre);
-            Console.WriteLine(b.PrimerNombre);
+            Console.WriteLine(a.Id);
+            Console.WriteLine(b.Id);
+            Console.WriteLine(b.Id);
         }
     }
 }
