@@ -1,6 +1,6 @@
 public class Alumno 
 {
-   public int id { get; set; }
+   public int Id { get; set; }
 
    public string PrimerNombre { get; set; } 
 

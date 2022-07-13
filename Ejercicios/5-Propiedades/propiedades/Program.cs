@@ -7,15 +7,15 @@ namespace propiedades
         static void Main(string[] args)
         {
             Alumno a = new Alumno();
-            a.id = 1;
+            a.Id = 1;
             a.PrimerNombre = "Juan";
             a.SegundoNombre = "Perez";
 
 
             Alumno b = new Alumno();
-            b.id = 2;
+            b.Id = 2;
             b.PrimerNombre = "Pedro";
-            b.SegundoNombre = "Perez";
+            b.SegundoNombre = "Martinez";
 
             Alumno c = new Alumno(3);
             b.PrimerNombre = "Jose";
