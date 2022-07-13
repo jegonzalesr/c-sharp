@@ -19,10 +19,13 @@ namespace propiedades
 
             Alumno c = new Alumno(3);
             b.PrimerNombre = "Jose";
+            
+            Alumno d = new Alumno("Juan", "Jimenez");
 
             Console.WriteLine(a.Id);
             Console.WriteLine(b.Id);
             Console.WriteLine(b.Id);
+            Console.WriteLine(d.PrimerNombre+" "+d.SegundoNombre);
         }
     }
 }
