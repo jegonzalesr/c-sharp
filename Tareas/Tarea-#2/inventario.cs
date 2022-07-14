@@ -2,16 +2,7 @@ using System;
 using System.Collections.Generic;
 public class Inventario{
 
-    //   string[,] productos = new string[5,3]
-    //     {
-    //         {"001","Iphone X",       "0"},
-    //         {"002","Laptop Dell",    "5"},
-    //         {"003","Monitor Samsung","2"},
-    //         {"004","Mouse",          "100"},
-    //         {"005","Headset",        "25"},
-           
-    //     };
-
+   
     public List<Producto> ListadeProductos { get; set; }
 
             public Inventario()
@@ -38,10 +29,7 @@ public class Inventario{
             Console.WriteLine("*********************");
             Console.WriteLine("Codigo , Descripcion , y Existencia");
 
-            // for (int i = 0; i < 5; i++)
-            // {
-            //     Console.WriteLine(productos[i , 0] + " | " + productos[i , 1] + " | " + productos[i , 2]); 
-            // }
+           
             foreach (var producto in ListadeProductos)
             {
                 Console.WriteLine(producto.Codigo + " | " + producto.Descripcion + " | " + producto.Existencia.ToString());
@@ -51,10 +39,9 @@ public class Inventario{
         
            
         public void movimientoInventario(string codigo, int cantidad, string tipoMovimiento) {
-    
-
-       foreach (var producto in ListadeProductos)
-       {
+        
+           foreach (var producto in ListadeProductos)
+           {
             if (producto.Codigo == codigo) {
                 if (tipoMovimiento == "+") {
                     producto.Existencia = producto.Existencia + cantidad;
@@ -78,7 +65,9 @@ public class Inventario{
             Console.Write("Ingrese la cantidad del producto: ");
             cantidad = Console.ReadLine();
 
-            movimientoInventario(codigo, Int32.Parse(cantidad), "+");
+            movimientoInventario(codigo, int.Parse(cantidad), "+");
+
+            
         }
 
                 public void salidaDeInventario() {
@@ -95,7 +84,7 @@ public class Inventario{
                 cantidad = Console.ReadLine();
                 Console.WriteLine();
 
-                movimientoInventario(codigo, Int32.Parse(cantidad), "-"); 
+                movimientoInventario(codigo, int.Parse(cantidad), "-"); 
             }
 
                 public void ajusteDeInventarioPositivo () {
@@ -112,7 +101,7 @@ public class Inventario{
                 cantidad = Console.ReadLine();
                 Console.WriteLine();
 
-                movimientoInventario(codigo, Int32.Parse(cantidad), "+");
+                movimientoInventario(codigo, int.Parse(cantidad), "+");
             }
 
                 public void ajusteDeInventarioNegativo() {
@@ -129,7 +118,7 @@ public class Inventario{
                 cantidad = Console.ReadLine();
                 Console.WriteLine();
 
-                movimientoInventario(codigo, Int32.Parse(cantidad), "-");
+                movimientoInventario(codigo, int.Parse(cantidad), "-");
         }
 
 
