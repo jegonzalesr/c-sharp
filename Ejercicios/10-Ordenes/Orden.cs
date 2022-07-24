@@ -13,7 +13,7 @@ public class Orden
 
     public Vendedor Vendedor { get; set; }
 
-    public List<OrdenDetalle> ListaOrdenDetalle{ get; set; }
+    public List<Orden> ListaOrdenDetalle{ get; set; }
 
 
     public Orden(int codigo, DateTime fecha, string numerodeOrden, Cliente cliente, Vendedor vendedor)
