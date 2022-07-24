@@ -1,5 +1,5 @@
 using System;
-public class Persona    //Persona es la clase padre de Cliente y Vendedor
+public class Persona    
 {
     public int Codigo { get; set; }
     public string Nombre { get; set; }

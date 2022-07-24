@@ -70,9 +70,9 @@ public class DatosdePrueba{
         Console.Clear();
         Console.WriteLine("Lista de Productos");
         Console.WriteLine("=================");
-        foreach (var producto  in ListadeProductos)
+        foreach (Producto p in ListadeProductos)
         {
-            Console.WriteLine(producto.Codigo + " | " + producto.Descripcion + " | " + producto.Precio);
+            Console.WriteLine(p.Codigo + " | " + p.Descripcion + " | " + p.Precio);
         }
 
         Console.ReadLine();
@@ -140,10 +140,10 @@ public class DatosdePrueba{
             Console.WriteLine("");
         }
 
-        int nuevoCodigo = ListaOrdenes.Count + 1;
+        int nuevoCodigo = ListadeOrdenes.Count + 1;
 
         Orden nuevaOrden = new Orden(nuevoCodigo, DateTime.Now, "SPS" + nuevoCodigo, cliente, vendedor);
-         ListaOrdenes.Add(nuevaOrden);
+         ListadeOrdenes.Add(nuevaOrden);
 
 
 
@@ -156,7 +156,7 @@ public class DatosdePrueba{
                     if (producto == null)
                     {
                         Console.WriteLine("Producto no encontrado");
-                        Console.ReadLine();
+                        return;
                     }
                     else
                     {
