@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 public class Orden
 
+
+
 {
     public int Codigo { get; set; }
 
@@ -13,7 +15,9 @@ public class Orden
 
     public Vendedor Vendedor { get; set; }
 
-    public List<Orden> ListaOrdenDetalle{ get; set; }
+    public List <OrdenDetalle> ListaOrdenDetalle { get; set; }
+
+    
 
 
     public Orden(int codigo, DateTime fecha, string numerodeOrden, Cliente cliente, Vendedor vendedor)
@@ -23,13 +27,15 @@ public class Orden
         NumerodeOrden = numerodeOrden;
         Cliente = cliente;
         Vendedor = vendedor;
+        ListaOrdenDetalle = new List<OrdenDetalle>();
     }
     
     public void AgregarProducto(Producto producto)
     {
         int nuevoCodigo = ListaOrdenDetalle.Count + 1;
-        OrdenDetalle ordenDetalle = new OrdenDetalle(1, 1 , producto);
-        ListaOrdenDetalle.Add(producto);
+        int cantidad = 1;
+        OrdenDetalle o = new OrdenDetalle(nuevoCodigo, 1, producto.Precio, producto); 
+        ListaOrdenDetalle.Add(o);
     }
        
 
