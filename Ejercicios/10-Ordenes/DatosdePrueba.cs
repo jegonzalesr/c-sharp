@@ -43,10 +43,10 @@ public class DatosdePrueba{
 
         private void CargarClientes()
         {
-            Cliente c1 = new Cliente(1, "Juan", "12345678");
+            Cliente c1 = new Cliente(01, "Juan", "12345678");
             ListadeClientes.Add(c1);
 
-            Cliente c2 = new Cliente(2, "Pedro", "87654321");
+            Cliente c2 = new Cliente(02, "Pedro", "87654321");
             ListadeClientes.Add(c2);
 
             
@@ -54,10 +54,10 @@ public class DatosdePrueba{
 
         private void CargarVendedores()
         {
-            Vendedor v1 = new Vendedor(1, "Juan", "V001");
+            Vendedor v1 = new Vendedor(01, "Juan", "V001");
             ListadeVendedores.Add(v1);
 
-            Vendedor v2 = new Vendedor(2, "Peter", "V002");
+            Vendedor v2 = new Vendedor(02, "Peter", "V002");
             ListadeVendedores.Add(v2);
 
         }
