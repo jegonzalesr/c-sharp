@@ -8,11 +8,11 @@ public class OrdenDetalle{
 
     public Producto Producto { get; set; }
 
-    public OrdenDetalle(int codigo , int cantidad, double precio, Producto producto){
+    public OrdenDetalle(int codigo , int cantidad, Producto producto){
         Codigo = codigo;
         Cantidad = cantidad;
-        Precio = precio;
         Producto = producto;
+        Precio = producto.Precio;
     }
     
         
