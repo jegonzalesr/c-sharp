@@ -11,7 +11,7 @@ public class DatosdePrueba{
 
     public List <Orden>  ListaOrdenes { get; set; }
 
-    
+        
 
     public DatosdePrueba()
     {
@@ -112,7 +112,7 @@ public class DatosdePrueba{
         Console.WriteLine("=================");
         Console.WriteLine("");
 
-        Console.WriteLine("Ingrese el codigo del cliente: ");
+        Console.Write("Ingrese el codigo del cliente: ");
         string codigoCliente = Console.ReadLine();
 
         Cliente cliente = ListadeClientes.Find(c => c.Codigo.ToString() == codigoCliente);
@@ -126,7 +126,7 @@ public class DatosdePrueba{
             Console.WriteLine("");
         }
 
-        Console.WriteLine("Ingrese el codigo del vendedor: ");
+        Console.Write("Ingrese el codigo del vendedor: ");
         string codigoVendedor = Console.ReadLine();        
 
         Vendedor vendedor = ListadeVendedores.Find(v=> v.Codigo.ToString() == codigoVendedor);
@@ -149,7 +149,7 @@ public class DatosdePrueba{
 
          while(true)
          {
-            Console.WriteLine("Ingrese el codigo del producto:  ");
+            Console.Write("Ingrese el codigo del producto:  ");
             string codigoProducto = Console.ReadLine();
 
                Producto producto = ListadeProductos.Find(p => p.Codigo.ToString() == codigoProducto);
@@ -161,19 +161,24 @@ public class DatosdePrueba{
                     else
                     {
                       Console.WriteLine("Producto agregado: " + producto.Descripcion + " con precio de: " + producto.Precio);
+                      Console.WriteLine("");
                       nuevaOrden.AgregarProducto(producto);
                     }
 
 
-            Console.WriteLine("Desea Continuar: s/n");
-            string continuar = Console.ReadLine();
+            Console.Write("Desea Continuar s/n : ");
+            string continuar = Console.ReadLine();            
+            Console.WriteLine("");
+            Console.WriteLine("*******************************");
             if (continuar.ToLower() == "n"){
                 break;
             }
-       
+        }
 
+            Console.WriteLine("");
+            Console.WriteLine("El valor total de la orden es : " + nuevaOrden.Total);
+            Console.ReadLine();    
 
-         } 
     }
 
 }

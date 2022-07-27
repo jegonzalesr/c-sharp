@@ -16,6 +16,8 @@ public class Orden
     public Vendedor Vendedor { get; set; }
 
     public List<OrdenDetalle> ListaOrdenDetalle { get; set; }
+
+    public double Total { get; set; }
     
 
 
@@ -33,9 +35,11 @@ public class Orden
     {
         int nuevoCodigo = ListaOrdenDetalle.Count + 1;
         int cantidad = 1;
+        
         OrdenDetalle o = new OrdenDetalle(nuevoCodigo, 1,producto); 
         ListaOrdenDetalle.Add(o);
 
+        Total += cantidad * producto.Precio;
         
     }
        
