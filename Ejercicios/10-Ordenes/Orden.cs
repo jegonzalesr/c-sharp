@@ -2,8 +2,6 @@ using System;
 using System.Collections.Generic;
 public class Orden
 
-
-
 {
     public int Codigo { get; set; }
 
@@ -17,8 +15,11 @@ public class Orden
 
     public List<OrdenDetalle> ListaOrdenDetalle { get; set; }
 
-    public double Total { get; set; }
-    
+    public double SubTotal { get; set; }
+
+    public double Isv { get; set; }
+
+    public double Total { get; set; }    
 
 
     public Orden(int codigo, DateTime fecha, string numeroOrden, Cliente cliente, Vendedor vendedor)
@@ -35,11 +36,18 @@ public class Orden
     {
         int nuevoCodigo = ListaOrdenDetalle.Count + 1;
         int cantidad = 1;
-        
+        double isv = 0.15;
+
         OrdenDetalle o = new OrdenDetalle(nuevoCodigo, 1,producto); 
         ListaOrdenDetalle.Add(o);
 
-        Total += cantidad * producto.Precio;
+        SubTotal += cantidad * producto.Precio;
+
+        Isv = SubTotal * isv;
+
+        Total += Isv + SubTotal;
+
+
         
     }
        

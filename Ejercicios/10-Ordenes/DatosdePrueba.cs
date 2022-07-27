@@ -176,25 +176,33 @@ public class DatosdePrueba{
         }
 
             Console.WriteLine("");
-            Console.WriteLine("El valor total de la orden es : " + nuevaOrden.Total);
+            Console.WriteLine("El valor total de la orden es : " + nuevaOrden.SubTotal);
             Console.ReadLine();    
 
     }
                  public void ListarOrdenes()
                  {
-                    Console.WriteLine("Lista de Ordenes");
+                    Console.WriteLine("Lista de Ordenes:");
                     Console.WriteLine("=================");
                     Console.WriteLine("");
 
                         foreach (var orden in ListaOrdenes)
                         {
-                            Console.WriteLine(orden.Codigo + " | " + orden.Fecha + " | " + " | " + orden.Total);
-                            Console.WriteLine(orden.Cliente.Nombre + " | " + orden.Vendedor.Nombre);
+                            Console.WriteLine("ID orden: " + orden.Codigo + " || Fecha: " + orden.Fecha + " || " + "Total Orden : " + orden.Total);
+                            Console.WriteLine("Cliente : " + orden.Cliente.Nombre +" || Vendedor: " + orden.Vendedor.Nombre);
+                            Console.WriteLine("");
 
                             foreach (var detalle in orden.ListaOrdenDetalle)
                             {
-                                Console.WriteLine(detalle.Producto.Descripcion + " | " + detalle.Cantidad + " | " + detalle.Precio);
+                                
+                                Console.WriteLine("|"+detalle.Producto.Descripcion + " | " + detalle.Cantidad + "|" + detalle.Precio+"|");
+                                                                         
                             }
+                            Console.WriteLine("_________________________________________");
+                            Console.WriteLine("Sub-Total Orden: " + orden.SubTotal);
+                            Console.WriteLine("Impuesto: " + orden.Isv);
+                            Console.WriteLine("TOTAL : " + orden.Total);
+                            Console.WriteLine("");
                         }
 
                         Console.ReadLine();
