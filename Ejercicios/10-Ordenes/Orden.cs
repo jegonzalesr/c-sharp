@@ -45,7 +45,7 @@ public class Orden
 
         Isv = SubTotal * isv;
 
-        Total += Isv + SubTotal;
+        Total = Isv + SubTotal;
 
 
         

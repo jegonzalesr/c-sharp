@@ -30,10 +30,10 @@ public class DatosdePrueba{
 
         private void CargarProductos()
         {
-            Producto p1 = new Producto(1, "Mouse", 250);
+            Producto p1 = new Producto(1, "Mouse  ", 250 );
             ListadeProductos.Add(p1);
 
-            Producto p2 = new Producto(2, "Monitor", 350);
+            Producto p2 = new Producto(2, "Monitor", 350 );
             ListadeProductos.Add(p2);
 
             Producto p3 = new Producto(3, "Teclado", 5000);
@@ -188,20 +188,21 @@ public class DatosdePrueba{
 
                         foreach (var orden in ListaOrdenes)
                         {
-                            Console.WriteLine("ID orden: " + orden.Codigo + " || Fecha: " + orden.Fecha + " || " + "Total Orden : " + orden.Total);
+                            Console.WriteLine("ID orden: " + orden.Codigo + " || Fecha: " + orden.Fecha + " || " + "Total Orden: " + orden.Total);
                             Console.WriteLine("Cliente : " + orden.Cliente.Nombre +" || Vendedor: " + orden.Vendedor.Nombre);
                             Console.WriteLine("");
+                            Console.WriteLine("Descripción: ");
 
                             foreach (var detalle in orden.ListaOrdenDetalle)
                             {
                                 
-                                Console.WriteLine("|"+detalle.Producto.Descripcion + " | " + detalle.Cantidad + "|" + detalle.Precio+"|");
+                                Console.WriteLine("|"+detalle.Producto.Descripcion +  "|"  + detalle.Cantidad + "|" + detalle.Precio+"|");
                                                                          
                             }
                             Console.WriteLine("_________________________________________");
-                            Console.WriteLine("Sub-Total Orden: " + orden.SubTotal);
-                            Console.WriteLine("Impuesto: " + orden.Isv);
-                            Console.WriteLine("TOTAL : " + orden.Total);
+                            Console.WriteLine("Sub-Total: "+ orden.SubTotal);
+                            Console.WriteLine(" Impuesto: "+ orden.Isv);
+                            Console.WriteLine("    TOTAL: "+ orden.Total);
                             Console.WriteLine("");
                         }
 
