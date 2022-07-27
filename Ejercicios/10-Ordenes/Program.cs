@@ -45,6 +45,10 @@ namespace Ordenes{
 
                             default:
                             break;
+                        case "5":
+                            datos.ListarOrdenes();
+                            break;
+                        
                     }
 
                     if (opcion == "0")
