@@ -13,7 +13,7 @@ namespace Ordenes{
                 {
                     Console.Clear();
 
-                    Console.WriteLine("Sistema de Odenes");
+                    Console.WriteLine("Sistema de Ordenes");
                     Console.WriteLine("=================");
                     Console.WriteLine("");
                     Console.WriteLine("1. Lista de Productos");
