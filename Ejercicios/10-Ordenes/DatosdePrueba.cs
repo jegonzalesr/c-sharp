@@ -36,29 +36,35 @@ public class DatosdePrueba{
             Producto p2 = new Producto(2, "Monitor", 350 );
             ListadeProductos.Add(p2);
 
-            Producto p3 = new Producto(3, "Teclado", 5000);
+            Producto p3 = new Producto(3, "Teclado", 550 );
             ListadeProductos.Add(p3);
         }
 
 
         private void CargarClientes()
         {
-            Cliente c1 = new Cliente(01, "Juan", "12345678");
+            Cliente c1 = new Cliente(01, "Juan Guzman",   "12345678");
             ListadeClientes.Add(c1);
 
-            Cliente c2 = new Cliente(02, "Pedro", "87654321");
+            Cliente c2 = new Cliente(02, "Pedro Cardona", "87654321");
             ListadeClientes.Add(c2);
+
+            Cliente c3 = new Cliente(03, "Carlos Rodolfo","87654321");
+            ListadeClientes.Add(c3);
 
             
         }
 
         private void CargarVendedores()
         {
-            Vendedor v1 = new Vendedor(01, "Juan", "V001");
+            Vendedor v1 = new Vendedor(01, "Juan Miguel",   "V001");
             ListadeVendedores.Add(v1);
 
-            Vendedor v2 = new Vendedor(02, "Peter", "V002");
+            Vendedor v2 = new Vendedor(02, "Peter Gonzales","V002");
             ListadeVendedores.Add(v2);
+
+            Vendedor v3 = new Vendedor(03, "Mario Lainez",  "V003");
+            ListadeVendedores.Add(v3);
 
         }
 
@@ -98,7 +104,7 @@ public class DatosdePrueba{
         Console.WriteLine("=================");
         foreach (var vendedor in ListadeVendedores)
         {
-            Console.WriteLine(vendedor.Codigo + " | " + vendedor.Nombre + " | " + vendedor.CodigoVendedor);
+            Console.WriteLine(vendedor.Codigo + " | "+ vendedor.Nombre + " | "+ vendedor.CodigoVendedor);
         }
         
         
