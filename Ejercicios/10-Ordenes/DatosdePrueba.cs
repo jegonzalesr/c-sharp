@@ -57,13 +57,13 @@ public class DatosdePrueba{
 
         private void CargarVendedores()
         {
-            Vendedor v1 = new Vendedor(01, "Juan Miguel",   "V001");
+            Vendedor v1 = new Vendedor(01, "Juan Miguel",      "V001");
             ListadeVendedores.Add(v1);
 
-            Vendedor v2 = new Vendedor(02, "Peter Gonzales","V002");
+            Vendedor v2 = new Vendedor(02, "Gustavo Gonzales", "V002");
             ListadeVendedores.Add(v2);
 
-            Vendedor v3 = new Vendedor(03, "Mario Lainez",  "V003");
+            Vendedor v3 = new Vendedor(03, "Mario Lainez",     "V003");
             ListadeVendedores.Add(v3);
 
         }
