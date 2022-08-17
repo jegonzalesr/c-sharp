@@ -1,0 +1,25 @@
+Samsung es una empresa de tecnologia proveniente de Asia... ¿de que pais es?(Japon, China, Corea del Sur)*Corea del Sur
+Que significa la tecla Ctrl en los teclados de computadora?(Central, Code L, Control)*Control
+De donde viene la empresa Huawei?(Japon, Taiwan, China)*China
+Spotify es una aplicacion de compras online? (Verdadero o Falso)*Falso
+Cual es la version sucesora del sistema operativo Windows 8?(Windows10, Windos9, Windows12)*Windows10
+De que pais proviene la empresa Sony?( USA, Japon, Corea del Sur)*Japon
+Cual de estos servicios de streaming NO existe? (Netflix, Disney+, Nickelodeon+)*Nickelodeon+
+El primer iPhone salio en al año…?( 2010, 2006, 2007)*2007
+El sistema operativo Windows fue creado por…?( Microsoft, Linux, IBM)*Microsoft
+En que año fue fundado Facebook?( 1985, 1999, 2004)*2004
+Con cual de estas tecnologias asocias fundamentalmente al Bitcoin?(Cloud, Edge, Javascript, Blockchain)*Blockchain
+Que significa la abreviacion 'OS' en el lenguaje informatico?(Operating System, Open Source, Open Software)*Operating System
+Que tipo de archivo es '.MOV'?(Archivo de pelicula , Archivo de texto, Archivo de imagen)*Archivo de pelicula 
+Que significa 'CPU'?, refiriendonos a una computadora.(Computing Power Units, Central Processing Unit, Central Power Unit)*Central Processing Unit
+Cual fue el primer buscador de internet?(Altavista, Google, Archie)*Archie
+Cual es el proposito del firewall/cortafuegos de tu computadora?(Proteger a tu computadora del fuego, Transmitir informacion, Seguridad)*Seguridad
+Cual es el protocolo de comunicacion que se usa principalmente para la conexion y el trafico de internet?(IPX/SPX, 64-bit, IP)*IP
+Que dio paso a las computadoras de segunda generacion al remplazar a los tubos de vacio?(Capacitadores, Resistores, Transistores)*Transistores
+Cual es el lenguaje de programacion de alto nivel de proposito general creado por Guido van Rossum en Holanda?(Ruby, Python, Java)*Python
+Cuantos bits hay en un byte?(16, 64, 8)*8
+Cual de estos es considerado un dispositivo de entrada?(Teclado, Circuito integrado, Monitor)*Teclado
+Que es Windows?(sistema operativo, Un editor de Imagenes, Un Disco Rigido)*sistema operativo
+Que tecnologia se utiliza para hacer posibles las llamadas telefonicas a traves de Internet?(Ethernet, Bluetooth, POP, VOIP)*VOIP
+Cual es la red social mas usada del mundo?(Instagram, Facebook, Twitter, Youtube)*Facebook
+Cual es la pagina de Internet mas visitada del mundo?(Gmail, Facebook, Google, Baidu)*Google
